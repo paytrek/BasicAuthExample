@@ -2,7 +2,7 @@ import base64
 
 import requests
 
-url = "http://sandbox.paytrek.com/api/v2/direct_charge/"
+url = "https://sandbox.paytrek.com/api/v2/direct_charge/"
 
 payload = {
     "amount": "12",
@@ -39,8 +39,8 @@ payload = {
 
 # https://sandbox.paytrek.com/dashboard/account_info/
 # Channel type must be API
-api_key = "test_auto"
-secret = "test_auto"
+api_key = ""
+secret = ""
 
 auth_token = base64.encodestring('%s:%s' % (api_key, secret)).replace('\n', '')
 
